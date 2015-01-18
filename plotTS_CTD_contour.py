@@ -1,5 +1,8 @@
 #============================================================================
-# T and S contour plots of CTD data
+# Reads text tab delimited data file with no header using "open" built in python function
+# Plots using the "contour" and "pcolor" plot functions in Matplotlib library.  
+# Plots Temp and Sal versus depth and distance with contourlines, colormap and colorbar. 
+# All data read is plotted on the same plot, does not make one plot per file.
 #
 #  Created By:   Diana Cardoso, Bedford Institute of Oceangraphy
 #                Diana.Cardoso@dfo-mpo.gc.ca
