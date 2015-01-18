@@ -1,5 +1,8 @@
 #============================================================================
-# T-S plot, T and S profile plots of CTD data with headers
+# Reads text tab delimited data file with a header using "genfromtxt" function from NumPy Library
+# Plots using the "scatter" plot function in Matplotlib library.  
+# Plots CTD Temp-Sal-Depth data scatter plots with colormap and colorbar. 
+# All data read is plotted on the same plot, does not make one plot per file.
 #
 #  Created By:   Diana Cardoso, Bedford Institute of Oceangraphy
 #                Diana.Cardoso@dfo-mpo.gc.ca
@@ -53,12 +56,12 @@ plt.figure(1)
 plt.scatter(x1m,y1, s=10, c=z1, edgecolor='None')
 plt.ylabel('Temperature [$^\circ$C]')
 plt.xlabel('Salinity [PSU]')
-#plt.title("Temperature-Salinity, Cruise Hudson2014017, Cast 25 to 31, July 2014")
+plt.title("Temperature-Salinity, Cruise #, Cast # to #, July 2014")
 cbar = plt.colorbar()
 cbar.set_label('Depth [m]')
 
 #- Call show and savefig:
-plt.savefig('TSD-scatterplot_bothcruise.png')
+plt.savefig('TSD-scatterplot.png')
 plt.show()
 plt.close()
 
