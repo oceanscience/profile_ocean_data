@@ -1,5 +1,8 @@
 #============================================================================
-# T-S plot, T and S profile plots of CTD data
+# Reads text tab delimited data file with no header using "open" built in python function
+# Plots using the "scatter" plot function in Matplotlib library.  
+# Plots CTD Temp-Sal-Depth data scatter plots with color map and Temp and Sal CTD data scatter profile plots. 
+# All data read is plotted on the same plot, does not make one plot per file.
 #
 #  Created By:   Diana Cardoso, Bedford Institute of Oceangraphy
 #                Diana.Cardoso@dfo-mpo.gc.ca
